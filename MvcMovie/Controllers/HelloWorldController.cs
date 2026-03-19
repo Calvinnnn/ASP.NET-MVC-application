@@ -19,4 +19,11 @@ public class HelloWorldController : Controller
         ViewData["NumTimes"] = numTimes;
         return View();
     }
+
+    public IActionResult FavouriteMovie(string favourite_movie)
+    {
+        ViewData["user_favourite_movie"] = favourite_movie;
+        return View();
+    }
+
 }

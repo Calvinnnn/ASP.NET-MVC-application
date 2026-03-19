@@ -25,5 +25,11 @@ public class HelloWorldController : Controller
         ViewData["user_favourite_movie"] = favourite_movie;
         return View();
     }
+    
+    public IActionResult DisplayMovie(string movie_title)
+    {
+        ViewData["movie_title"] = movie_title;
+        return View();
+    }
 
 }
